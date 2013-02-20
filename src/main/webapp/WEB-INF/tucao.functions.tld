@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<taglib version="2.0"
+    xmlns="http://java.sun.com/xml/ns/j2ee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+    	http://java.sun.com/xml/ns/j2ee 
+    	http://java.sun.com/xml/ns/j2ee/web-jsptaglibrary_2_0.xsd">
+
+    <display-name>Tucao Custom Functions</display-name>    
+    <tlib-version>1.0</tlib-version>
+    <short-name>f</short-name>
+    <uri>http://tucao.me/functions</uri>
+
+    <function>
+        <name>imageUrl</name>
+        <function-class>me.tucao.web.utils.WebImageUtil</function-class>
+        <function-signature>java.lang.String getImageUrl(java.lang.String)</function-signature>
+    </function>
+    <function>
+        <name>gender</name>
+        <function-class>me.tucao.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getGender(me.tucao.constants.Gender)</function-signature>
+    </function>
+    <function>
+        <name>thirdPerson</name>
+        <function-class>me.tucao.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getThirdPerson(me.tucao.constants.Gender)</function-signature>
+    </function>
+    <function>
+        <name>avatarUrl</name>
+        <function-class>me.tucao.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getAvatarUrl(me.tucao.domains.Resource, me.tucao.constants.Gender)</function-signature>
+    </function>
+    <function>
+        <name>activity</name>
+        <function-class>me.tucao.web.utils.DomainObjectUtil</function-class>
+        <function-signature>java.lang.String getActivityHtml(me.tucao.vo.ActivityVo)</function-signature>
+    </function>
+</taglib>
